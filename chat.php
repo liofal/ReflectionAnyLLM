@@ -45,8 +45,10 @@ if ($userMessage === '') {
 }
 
 function callOpenAI($messages, $stream) {
-    $api_url = 'http://192.168.0.3:1234/v1/chat/completions';
-    $model = 'gpt-4o-mini'; 
+    $api_url = 'http://192.168.1.191:8080/api/chat/completions';
+    $model = 'llama3.2:latest'; 
+    $model = 'qwen2.5:latest'; 
+    $model = 'phi3:latest'; 
     $temperature = 0.3; 
     $max_tokens = 1500; 
     $api_key = 'YOUR_API_KEY'; 
